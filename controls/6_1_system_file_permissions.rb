@@ -210,7 +210,7 @@ control 'cis-dil-benchmark-6.1.7' do
     it { should_not be_writable.by 'other' }
     it { should_not be_executable.by 'other' }
     its(:uid) { should cmp 0 }
-    its(:gid) { should cmp 0 }
+    its(:gid) { should cmp ['root', 'shadow'] }
     its(:sticky) { should equal false }
     its(:suid) { should equal false }
     its(:sgid) { should equal false }
