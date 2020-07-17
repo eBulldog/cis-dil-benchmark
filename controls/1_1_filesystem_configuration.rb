@@ -123,7 +123,7 @@ control 'cis-dil-benchmark-1.1.1.8' do
   impact 1.0
 
   tag cis: 'distribution-independent-linux:1.1.1.8'
-  tag level: 1
+  tag level: 2
 
   describe kernel_module('vfat') do
     it { should_not be_loaded }
